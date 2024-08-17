@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+    <div class="conatiner_main w-[100%] h-[100vh] flex justify-center bg-black items-center ">
+        <!-- form div -->
+<div class="form " id="up">
+  <span class="input-span">
+    <!-- Name -->
+    <label for="text" class="label">Full Name</label>
+    <input type="text"  id="text"/></span>
+<!-- email -->
+  <span class="input-span">
+    <label for="email" class="label">Email</label>
+    <input type="email"  id="email"/></span>
+    <!-- password -->
+  <span class="input-span">
+    <label for="password" class="label">Password</label>
+    <input type="password"  id="password"/></span>
+    <!-- sign up button -->
+  <input class="submit" type="submit" id="sign_up" value="Sign up" />
+  <span class="span">I have a account? <a href="login.html">Sign in</a></span>
+</div>
+
+
+</div>
+
+    
+
+    <script type="module" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
